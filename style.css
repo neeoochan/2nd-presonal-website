@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements vertically */
+    align-items: center; /* Center elements horizontally */
+    position: relative; /* Relative positioning for profile icon */
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    padding: 20px;
+}
+
+/* Profile picture styles */
+#profile-picture {
+    position: absolute; /* Positioning for top left */
+    top: 20px; /* Space from the top */
+    left: 20px; /* Space from the left */
+    width: 50px; /* Small size to match icons */
+    height: 50px; /* Small size to match icons */
+    border-radius: 50%; /* Circular shape */
+    border: 5px solid #000; /* Add a solid black border */
+    overflow: hidden; /* Ensure the image doesn't overflow */
+}
+
+#profile-picture img {
+    width: 100%; /* Make image fill the div */
+    height: 50px; /* Maintain aspect ratio */
+}
+
+.social-icons .icon {
+    color: #000;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.social-icons .icon:hover {
+    color: #333;
+}
+
+/* Container for the top-right buttons */
+.top-right-container {
+    position: absolute;
+    top: 20px; /* Positioning for icons */
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Button styling */
+.btn {
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: inherit;
+    width: 50px; /* Set width for consistency */
+    height: 50px; /* Set height for consistency */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Rounded shape for buttons */
+}
+
+/* Side menu */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: 0; /* Aligns to the right */
+    height: 100%;
+    width: 50%; /* Set width to 50% of the viewport */
+    background-color: #333;
+    color: white;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    transition: transform 0.3s ease; /* Use transform for smoother animation */
+    transform: translateX(100%); /* Start hidden off-screen */
+    z-index: 1000;
+}
+
+/* Close button */
+.close-btn {
+    align-self: flex-end;
+    margin-right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+}
+
+/* Menu links */
+.side-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Show menu when active */
+.side-menu.active {
+    transform: translateX(0); /* Slide into view */
+}
+
+/* Social icons in side menu */
+.social-icons {
+    margin-top: auto; /* Pushes social icons to the bottom */
+    padding-bottom: 20px; /* Space at the bottom */
+}

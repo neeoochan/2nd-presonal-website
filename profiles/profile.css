@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Dark text color for readability */
+    display: flex; /* Use flexbox for full screen fit */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.container {
+    width: 90%; /* Full width of the viewport */
+    max-width: 800px; /* Maximum width for the container */
+    padding: 20px; /* Padding inside the container */
+}
+
+.header {
+    display: flex; /* Use flexbox for header layout */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.profile-pic {
+    width: 100px; /* Adjusted size for profile picture */
+    height: 100px; /* Adjusted size for profile picture */
+    border-radius: 50%; /* Circular profile picture */
+    margin-right: 20px; /* Space between picture and name */
+}
+
+.name {
+    font-size: 2em; /* Font size for the name */
+    color: #333; /* Dark color for the name */
+    text-transform: uppercase; /* Uppercase for the name */
+}
+
+.profile {
+    padding: 20px; /* Padding around profile */
+}
+
+.intro {
+    text-align: left; /* Left-align intro text */
+    font-size: 1.5em; /* Larger font size for intro */
+    color: #333; /* Dark gray for intro text */
+    margin-bottom: 10px; /* Space below intro */
+    width: 100%; /* Full width of the box */
+}
+
+.bio {
+    text-align: left; /* Left-align bio text */
+    font-size: 1.1em; /* Slightly larger font size for bio */
+    color: #666; /* Light gray for bio text */
+    line-height: 1.5; /* Increase line height for better readability */
+}
+
+.footer {
+    text-align: left; /* Left-align footer text */
+    padding: 20px; /* Padding around footer */
+    border-top: 1px solid #ddd; /* Light top border */
+    margin-top: 20px; /* Space above the footer */
+}
+
+#social-icons {
+    display: flex; /* Use flexbox for social icons */
+    flex-direction: column; /* Stack icons vertically */
+    margin-top: 10px; /* Space above the social icons */
+}
+
+.icon {
+    margin: 5px 0; /* Space between icons */
+    font-size: 18px; /* Size for social media icons */
+    color: #333; /* Color for icons */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.icon i {
+    margin-right: 8px; /* Space between icon and text */
+}
